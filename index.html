@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page for Customers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="head-title"><h1>Product Review Page for Customers</h1></div>
+        <div class="head-message"></div>
+<br>
+        <div class="product-details">
+            <h1>Product Details</h1>
+        <div class="product-image"></div>
+        <div class="product-name"></div>
+        <div class="product-info"></div>
+        <div class="product-review"></div>
+        </div>
+
+
+        <div class="userstatus">
+            
+        </div>
+
+        <form class="review-details">
+            <h1>Product Review</h1>
+            <h3>Please Enter You Name (optional)</h3>
+            <input type="text" name="name" id="name">
+            <h3>Please Write Review on Product<i style="color: red;">*</i></h3>
+            <textarea name="comment" id="comment"></textarea>
+            <h3>Please Select Any Review Ranging from 1 Star to 5 Star <i  style="color: red;">*</i></h3>
+<div class="rating">
+
+          <i id="star1" class="fa-solid fa-star starColor"></i>
+            <i id="star2" class="fa-solid fa-star starColor"></i>
+            <i id="star3" class="fa-solid fa-star starColor"></i>
+            <i id="star4" class="fa-solid fa-star starColor"></i>
+            <i id="star5" class="fa-solid fa-star starColor"></i>
+</div>
+<br>
+<button type="submit" class="btn">Submit</button>
+<br><br>
+        </form>
+
+            <!-- 
+            these style of getting rating was good but i was unable to make the javascript functionality for it from my own mind
+
+            <input class="review" id="review1" type="radio" name="review" value="1">
+            <label  for="review1">1 Star</label>
+            <input class="review" id="review2"type="radio" name="review" value="2">
+            <label  for="review2">2 Star</label>
+            <input class="review" id="review3" type="radio" name="review" value="3">
+            <label  for="review3">3 Star</label>
+            <input class="review" id="review4" type="radio" name="review" value="4">
+            <label  for="review4">4 Star</label>
+            <input class="review" id="review5" type="radio" name="review" value="5">
+            <label  for="review5">5 Star</label> 
+            
+            these style of getting rating was good but i was unable to make the javascript functionality for it from my own mind
+            
+            -->
+            <!-- <h3>For your ease of knowing rating scale</h3>
+            <p>1 STAR = Fair or Not Good</p>
+            <p>2 STAR = Good in Normal</p>
+            <p>3 STAR = Execelent</p>
+            <p>4 STAR = Best Pefect</p>
+            <p>5 STAR = Outstanding </p>
+            i will uncomment this as needed but now i am commenting because it take too space in web page
+            -->
+            
+<hr>
+
+    <div class="recent-reviews">
+        <h1>Recent Reviews</h1>
+        <div class="post">
+        <h3 class="reviewername"></h3>
+        <h3 class="reviewercomment"></h3>
+        <h3 class="reviewerrating"></h3>
+        <h3 class="reviewertime"></h3>
+        </div>
+
+
+        <hr>
+        <footer>Made with &hearts; by Muhammad</footer>
+    </div>
+    </div>
+    <script src="app.js"></script>
+    <hr>
+</body>
+</html>
