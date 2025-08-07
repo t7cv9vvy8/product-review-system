@@ -165,7 +165,7 @@ function checkUser() {
         let getStar4 = document.querySelector("#star4");
         let getStar5 = document.querySelector("#star5");
 
-        getStar1.addEventListener("click", function case1() {
+        getStar1.addEventListener("click", function() {
             getStar1.style.color = "gold";
             rating = 1;
             getStar2.style.color = "grey";
@@ -232,11 +232,18 @@ function saveData() {
 
 // made with help of gpt but learned it 
         function loadData() {
+                rating = 0;
+                getStar1.style.color = "grey";
+                getStar2.style.color = "grey";
+                getStar3.style.color = "grey";
+                getStar4.style.color = "grey";
+                getStar5.style.color = "grey";
+                
             //function for post data in the recent review section of the page
             let dataSet = JSON.parse(localStorage.getItem("jsonData"));
             let mainDiv = document.querySelector(".recent-reviews");
             if(!dataSet) return;
-            for(let i=dataSet.length;i>0;i--){
+            for(let i=dataSet.length;i>=0;i--){
             if(!dataSet[i]) continue;
                 let post = document.createElement("div");
                 post.classList.add("post");
@@ -369,3 +376,4 @@ function saveData() {
 
         
         loadData();
+
