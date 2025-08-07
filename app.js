@@ -232,12 +232,8 @@ function saveData() {
 
 // made with help of gpt but learned it 
         function loadData() {
-                rating = 0;
-                getStar1.style.color = "grey";
-                getStar2.style.color = "grey";
-                getStar3.style.color = "grey";
-                getStar4.style.color = "grey";
-                getStar5.style.color = "grey";
+        
+                
                 
             //function for post data in the recent review section of the page
             let dataSet = JSON.parse(localStorage.getItem("jsonData"));
@@ -274,6 +270,11 @@ function saveData() {
                 getStar4.style.color = "grey";
                 getStar5.style.color = "grey";
                 ratingTag.innerHTML = case1.innerHTML;
+                    getStar1.style.color = "grey";
+                getStar2.style.color = "grey";
+                getStar3.style.color = "grey";
+                getStar4.style.color = "grey";
+                getStar5.style.color = "grey";
                     
                 
             } else if (dataSet[i].rating === 2) {
@@ -285,6 +286,7 @@ function saveData() {
                 getStar4.style.color = "grey";
                 getStar5.style.color = "grey";
                 ratingTag.innerHTML = case2.innerHTML;
+                
 
             } else if (dataSet[i].rating === 3) {
                 let case3 = document.querySelector(".rating");
@@ -376,4 +378,5 @@ function saveData() {
 
         
         loadData();
+
 
